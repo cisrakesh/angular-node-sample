@@ -1,0 +1,242 @@
+/*Css added by cis team*/
+    .pagination a {
+    /* margin: 10px; */
+    padding: .5rem .75rem;
+    }
+.pagination .current {
+    background-color: #1b82ec;
+    border-color: #1b82ec;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.15);
+    color: #ffffff !important;
+    cursor: pointer;
+    line-height: 1.5;
+}
+.filter li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+.filter li input {
+    margin-right: 5px;
+    text-align: justify;
+}
+.row.gapping button {
+  margin-top: 30px;
+}
+.row.gapping {
+  margin-bottom: 20px;
+}
+
+ .current{
+    text-decoration: underline;
+color: black;
+  }
+  .menu li {
+    list-style-type: none;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0px;
+}
+
+.squeechedTbl td,.squeechedTbl th{
+    padding: 0px 5px !important;
+}
+
+table td{
+  position:relative;
+}
+
+
+.fixInputTbl {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.fixInputTbl th {
+    text-align: left;
+    
+}
+.tbl-form-control{
+  display: block;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.tbl-form-control:disabled, .tbl-form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+    height: calc(2.0rem + 2px);
+    font-size: 0.8rem;
+}
+
+.tbl-input-50{
+  width:50px;
+}
+
+.tbl-input-55{
+  width:55px;
+}
+
+.tbl-input-60{
+  width:60px;
+}
+
+.tbl-input-65{
+  width:65px;
+}
+.payment .tbl-input-50{
+  width:70px;
+}
+.payment .tbl-input-65{
+  width:90px;
+}
+.tbl-input-70{
+  width:70px;
+}
+
+.tbl-input-75{
+  width:75px;
+}
+
+.tbl-input-80{
+  width:80px;
+}
+
+.tbl-input-85{
+  width:85px;
+}
+
+.tbl-input-90{
+  width:90px;
+}
+
+.tbl-input-100{
+  width:100px;
+}
+
+.tbl-input-105{
+  width:105px;
+}
+
+.tbl-input-110{
+  width:110px;
+}
+
+.tbl-input-115{
+  width:115px;
+}
+
+.tbl-input-120{
+  width:120px;
+}
+
+.tbl-input-140{
+  width:140px;
+}
+
+.tbl-input-160{
+  width:160px;
+}
+
+.tbl-input-170{
+  width:170px;
+}
+
+
+.bookingMenuUl{
+  padding: 0px
+}
+
+.caps {text-transform: uppercase;}
+.lessPadding{padding: .5rem;} 
+/*trash css*/
+.card-header {
+    padding: 0rem 1.25rem;
+    }
+.form-control{
+  height: calc(2.0rem + 2px);
+  font-size: 0.8rem;
+
+}
+.form-group{
+  /*margin-bottom: 0rem;*/
+}
+
+hr{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.table td, .table th {
+    padding: 0rem;
+}
+
+.table > tbody > tr > td, .table > tfoot > tr > td, .table > thead > tr > td {
+
+    padding: 5px 2px;
+
+}
+
+div.logo{
+  width:10%;
+}
+
+div.navbar-custom{
+  width:80%;
+  float: left;
+}
+@media (min-width: 992px) {
+  #topnav .navigation-menu > li:hover a i{
+    color:rgba(255,255,255,.5);
+  }
+  #topnav .navigation-menu > li:hover a{
+    color:rgba(255,255,255,.5);
+  }
+
+  #topnav .navigation-menu > li a i{
+    color:#fff;
+  }
+  #topnav .navigation-menu > li a{
+    color:#fff;
+  }
+  #topnav .navbar-custom{
+   background-color: #1b82ec ;
+  }
+  #topnav .has-submenu.active a {
+      color: rgba(255,255,255,.5);
+  }
+}
+.wrapper {
+    padding-top: 60px;
+}
+.menu-extras{
+ width:10%;
+  float: right; 
+}
+.page-title-box{
+  padding: 0px 0px 80px 00px;
+}
+
+
+.allNotifications {
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: underline;
+  color: #1B82EC;
+}
+.allNotifications a {
+  color: #1B82EC;
+}
+.profit-table thead tr th{padding: 10px !important;background-color: black;color: gold;}
+.profit-table thead tr th{padding: 10px !important;border: 1px solid gold;}
+.profit-table tbody tr td{padding: 10px !important;border: 1px solid gold;}
+.profit-table > tbody > tr:nth-of-type(2n+1) {
+  background-color: #f9f9f9;
+}
+.dropdown-menu-lg{width: 315px;}

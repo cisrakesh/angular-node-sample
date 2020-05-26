@@ -1,0 +1,173 @@
+<!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+                    <div class="logo">
+
+                        <a routerLink="/" class="logo">
+                            <!-- <img src="assets/images/logo-sm-light.png" alt="" class="logo-small">
+                            <img src="assets/images/logo-light.png" alt="" class="logo-large"> -->
+                           <h3 style="color: #ffffff"> CRM</h3>
+                        </a>
+
+                    </div>
+
+                    <!-- End Logo container-->
+                    <!-- MENU Start -->
+                    <div class="navbar-custom">
+                        <!-- <div class="container-fluid"> -->
+                        <div class="">
+                            <div id="navigation">
+                                <!-- Navigation Menu-->
+                                <ul class="navigation-menu">
+
+                                    <li class="has-submenu">
+                                        <a href="home/dashboard"><i class="mdi mdi-home"></i>Dashboard</a>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#"><i class="mdi mdi-account"></i>User Account</a>
+                                        <ul class="submenu">
+                                            <li><a href="users/index">User List</a></li>
+                                            <li><a href="users/register">Add User</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#"><i class="mdi mdi-flash"></i>Leads</a>
+                                        <ul class="submenu">
+                                            <li><a href="lead/">Leads List</a></li>
+                                            <li><a href="lead/create">Add Leads</a></li>
+                                            <li><a href="lead/uploadLeads">Upload Leads</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#"><i class="mdi mdi-wallet-travel"></i>Bookings</a>
+                                        <ul class="submenu">
+                                            <li><a href="booking/">My Booking</a></li>
+                                            <li><a href="booking/flight/-1">Create Booking</a></li>
+                                            <li><a href="booking/search">Search Booking</a></li>
+                                            <li><a href="booking/pendingBooking">Pending Booking</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="has-submenu">
+                                        <a href="#"><i class="mdi mdi-home"></i>Reports</a>
+                                        <ul class="submenu">
+                                            <li><a href="reports/profitReports">Profit Report</a></li>
+                                            <li><a href="reports/airProductReport/">Air Product Report</a></li>
+                                            <li><a href="reports/balanceDueReport">Balance Due Report</a></li>
+                                            <li><a href="reports/groundProductReport">Ground Product Report</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a class="cloneBookingPopUp" href="javascript:void(0);"><i class="mdi mdi-wallet-travel"></i>Clone Booking</a>
+                                    </li>
+                                </ul>
+                                <!-- End navigation menu -->
+                            </div> <!-- end #navigation -->
+                        </div> <!-- end container -->
+                    </div> <!-- end navbar-custom -->
+
+                    <div class="menu-extras topbar-custom">
+
+                        <ul class="navbar-right d-flex list-inline float-right mb-0">
+                            <!-- <li class="dropdown notification-list d-none d-sm-block">
+                                <form role="search" class="app-search">
+                                    <div class="form-group mb-0">
+                                        <input type="text" class="form-control" placeholder="Search..">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </li> -->
+
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <i class="mdi mdi-bell noti-icon"></i>
+                                    
+                                    <span class="badge badge-pill badge-info noti-icon-badge">
+                                        0
+                                    </span>
+                                    
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                                    <!-- item-->
+                                    <h6 class="dropdown-item-text">
+                                    
+                                        Notifications (0)
+                                    </h6>
+                                    <div class="slimscroll notification-item-list">
+                                        <!-- item-->
+                                        
+                                        <a href="home/notifications/1" class="dropdown-item notify-item active">
+                                            <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                                            <p class="notify-details">From <b>Someone </b> in Lead Id <b>12345</b><span class="text-muted">Some message</span></p>
+                                        </a>
+                                        
+                                       <a href="home/notifications/1" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                                            <p class="notify-details">From <b>Someone </b> in Lead Id <b>12345</b><span class="text-muted">Some message</span></p>
+                                        </a>
+
+                                        
+                                        <!-- item-->
+                                        <div class="allNotifications">
+                                       		<a href="booking/allNotifications/">View All Notifications</a>
+                                       	</div>
+                                    </div>
+                                    <!-- All-->
+                                    
+                                </div>
+                            </li>
+                            <li class="dropdown notification-list">
+                                <div class="dropdown notification-list">
+                                    <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                        <img src="assets/images/users/user-4.jpg" alt="user" class="rounded-circle">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                        <!-- item-->
+                                        <a class="dropdown-item text-success"  routerLink="/profile">
+                                         	{{currentUser.name}}
+                                        </a>
+                                       <!--   <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" routerLink="/profile"><i class="mdi mdi-account-circle m-r-5"></i>Update Profile</a>
+                                        <a class="dropdown-item" routerLink="/change-password"><i class="mdi mdi-wallet m-r-5"></i> Change Password</a>
+                                        <!-- <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings m-r-5"></i> Settings</a>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5"></i> Lock screen</a> -->
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item text-danger" href="#" (click)="logout()"><i class="mdi mdi-power text-danger"></i> Logout</a>
+                                            
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="menu-item list-inline-item">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>
+
+                        </ul>
+
+
+
+                    </div>
+                    <!-- end menu-extras -->
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+            
+        </header>
+        <!-- End Navigation Bar-->
